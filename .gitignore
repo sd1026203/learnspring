@@ -1,0 +1,11 @@
+*/target/*
+learnspring.ipr
+*/target
+target/*
+meilv.iws
+logs/
+projectFilesBackup/
+.idea/
+*.iml
+*.class
+*.DS_Store

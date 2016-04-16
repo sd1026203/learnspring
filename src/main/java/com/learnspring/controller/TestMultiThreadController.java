@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Created by gewei on 15/12/2.
  */
 @Controller
+//@Scope("prototype")
 @RequestMapping(value = "/threadtest", produces = MediaType.APPLICATION_JSON_VALUE)
 public class TestMultiThreadController {
 
@@ -34,6 +35,7 @@ public class TestMultiThreadController {
     public
     @ResponseBody
     void multiThread() throws InterruptedException, ExecutionException {
+        //        logger.info(threadPool);
         Long timeStart = System.currentTimeMillis();
         List<Future<Integer>> results = new ArrayList();
         for (int i = 0; i < 5; i++) {
